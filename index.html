@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>Untuk Kamu yang Selalu Spesial ❤️</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      width: 100%;
+      min-height: 100%;
+    }
+
+    body {
+      min-height: 100vh;
+      min-height: 100dvh;
+
+      background: linear-gradient(
+        135deg,
+        #ffccd5,
+        #ffb3c1
+      );
+
+      font-family:
+        "Segoe UI",
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      padding: 20px;
+    }
+
+    /* KARTU */
+    .card {
+      width: 100%;
+      max-width: 380px;
+
+      background: white;
+
+      border-radius: 20px;
+
+      padding: 16px;
+
+      text-align: center;
+
+      box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.15);
+
+      overflow: hidden;
+    }
+
+    /* VIDEO */
+    .video-container {
+      width: 100%;
+
+      aspect-ratio: 16 / 9;
+
+      border-radius: 14px;
+
+      overflow: hidden;
+
+      background: #000;
+
+      margin-bottom: 18px;
+    }
+
+    .video-container video {
+      display: block;
+
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+
+      border: none;
+      outline: none;
+    }
+
+    /* JUDUL */
+    h2 {
+      color: #d63384;
+
+      font-size: 1.3rem;
+
+      line-height: 1.35;
+
+      margin-bottom: 12px;
+    }
+
+    /* PESAN */
+    p {
+      color: #555;
+
+      font-size: 0.95rem;
+
+      line-height: 1.6;
+
+      margin-bottom: 20px;
+    }
+
+    /* TEKS TEBAL */
+    strong {
+      color: #d63384;
+    }
+
+    /* TOMBOL */
+    .btn-pesan {
+      display: inline-block;
+
+      background: #e63946;
+
+      color: white;
+
+      border: none;
+
+      border-radius: 30px;
+
+      padding: 12px 22px;
+
+      font-size: 0.95rem;
+
+      font-weight: bold;
+
+      cursor: pointer;
+
+      box-shadow:
+        0 4px 10px rgba(230, 57, 70, 0.3);
+
+      transition:
+        transform 0.2s,
+        background 0.2s;
+    }
+
+    .btn-pesan:active {
+      transform: scale(0.95);
+    }
+
+    .btn-pesan:hover {
+      background: #d62839;
+    }
+
+    /* RESPONSIVE HP KECIL */
+    @media (max-width: 360px) {
+
+      body {
+        padding: 12px;
+      }
+
+      .card {
+        padding: 14px;
+      }
+
+      h2 {
+        font-size: 1.15rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+
+      .btn-pesan {
+        font-size: 0.9rem;
+        padding: 11px 19px;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <div class="card">
+
+    <!-- =========================
+         VIDEO
+         ========================= -->
+
+    <div class="video-container">
+
+      <video
+        autoplay
+        loop
+        muted
+        playsinline
+        controls
+        preload="auto">
+
+        <source
+          src="video_cewek.mp4"
+          type="video/mp4">
+
+        Browser kamu tidak mendukung video.
+
+      </video>
+
+    </div>
+
+
+    <!-- =========================
+         JUDUL
+         ========================= -->
+
+    <h2>
+      Untuk Kamu yang Selalu Spesial ❤️
+    </h2>
+
+
+    <!-- =========================
+         PESAN
+         ========================= -->
+
+    <p>
+
+      Aku mungkin nggak selalu pandai
+      mengungkapkan perasaanku lewat kata-kata,
+      tapi ada satu hal yang selalu aku tahu:
+      aku senang setiap kali ada kamu. ❤️
+
+      <br><br>
+
+      Terima kasih sudah hadir dan membawa
+      banyak hal kecil yang ternyata berarti
+      besar buat aku.
+
+      Senyummu, perhatianmu, bahkan obrolan
+      sederhana kita bisa jadi alasan kenapa
+      hari yang biasa terasa jauh lebih menyenangkan. 💕
+
+      <br><br>
+
+      Aku nggak tahu akan seperti apa
+      hari-hari ke depannya, tapi untuk sekarang
+      aku cuma ingin kamu tahu kalau
+      kehadiranmu benar-benar berarti buat aku.
+
+      <br><br>
+
+      Kalau suatu hari kamu merasa kurang berharga,
+      ingat satu hal ini:
+
+      <br><br>
+
+      <strong>
+        Kamu spesial, bukan karena harus sempurna,
+        tapi karena kamu adalah kamu. ❤️
+      </strong>
+
+    </p>
+
+
+    <!-- =========================
+         TOMBOL
+         ========================= -->
+
+    <button
+      class="btn-pesan"
+      onclick="bukaPesan()">
+
+      Buka Pesan Spesial 💕
+
+    </button>
+
+  </div>
+
+
+  <!-- =========================
+       JAVASCRIPT
+       ========================= -->
+
+  <script>
+
+    function bukaPesan() {
+
+      alert(
+        "I love you! ❤️\n\n" +
+        "Terima kasih sudah menjadi bagian " +
+        "dari hari-hariku. 💕"
+      );
+
+    }
+
+  </script>
+
+</body>
+
+</html>
